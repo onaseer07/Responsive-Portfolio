@@ -1,0 +1,365 @@
+/* Elements */
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0 auto;
+    color: #777777;
+    font-family: Arial, Helvetica, sans-serif;
+    background-size: no-repeat;
+    height: 100%;
+}
+main {
+    width: 960px;
+    background-color: #ffffff;
+    border: 2px;
+    border-style: solid;
+    border-color: #dddddd;
+    margin: 20px 0px 0px 0px;
+    min-height: 270px; 
+    margin: 50px auto;
+    padding: 10px;
+    clear: both;
+    position: relative;
+}
+header {
+    position: relative;
+    margin: 0 0 0 0;
+    width: 100%;
+    background-color: #ffffff;
+    border-bottom: 2px;
+    border-top: 0px; 
+    border-style: solid;
+    border-bottom-color: #cccccc;
+    padding: 50px;
+    overflow: hidden;
+    height: 100px;
+    
+}
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: #666666;
+    position: fixed;
+    bottom: 0%;
+    left: 0;
+    clear: both;
+}
+p{
+    line-height: 2;
+    margin: 0px 0px 0px 10px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h2{
+    color: #4aaaa5;
+    font-size: 30px;
+}
+hr {
+    border: 0;
+    height: 3px;
+    background-color: #e0e0e0;
+}
+a:link {
+    padding: 5px;
+    color: #777777;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 20px;
+}
+a:hover {
+    color: #44aaa5;
+    background: #ffffff;
+    font-style: normal;
+    font-size: 20px;
+    transition: .5s;
+}
+a:visited {
+    padding: 5px;
+    color: #777777;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 20px;
+}
+a:visited:hover{
+    color: #44aaa5;
+    background: #ffffff;
+    font-style: normal;
+    font-size: 20px;
+    transition: .5s;
+}
+img {
+    object-fit: cover;
+}
+/* Classes */
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    border: 0px;
+    background-color: transparent;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.headerContainer {
+    width: 960px;
+    margin: 0 auto;
+}
+.mainPortfolio {
+    min-height: 950;
+    overflow: auto;
+}
+.portfolioContainer1 {
+    position: relative;
+    width: 350px;
+    height: auto;
+    background-color: #777777;
+    float: left;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.portfolioContainer2 {
+    position: relative;
+    width: 350px;
+    height: auto;
+    background-color: #777777;
+    float: right;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.thumbnail {
+    width: 350px;
+    height: 250px;
+    border: 0;
+}
+.portfolioDescription1 {
+    position: absolute;
+    top: 150px;
+    width: 100%;
+    text-align: center;
+    background-color: #4aaaa5;
+    color: #ffffff;
+    clear:both;
+}
+.portfolioDescription2 {
+    position: absolute;
+    top: 150px;
+    width: 100%;
+    text-align: center;
+    background-color: #4aaaa5;
+    color: #ffffff;
+    clear:both;
+}
+.footerContainer {
+    color: #cccccc;
+    width: 960px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* IDs */
+#logo {
+    height: 100%;
+    font-size: 35px;
+    background-color: #4aaaa5;
+    color: #ffffff;
+    text-align: center;
+    padding: 26px;
+    position: absolute;
+    top: 0;
+    margin-left: 0%;
+}
+#navBar {
+    float: right;
+    word-spacing: 20px;
+    font-size: 20px;
+    color: #e0e0e0;
+}
+#bioImage {
+    float: left;
+    margin-right: 15px;
+
+}
+#portfolio1 {
+    margin: 20px;
+}
+#portfolio2 {
+    margin: 20px;
+    clear: both;
+}
+#portfolio3 {
+    margin: 20px;
+    clear: both;
+}
+#name {
+    width: 100%;
+    height: 30px;
+    border: 1px;
+    border-style: solid;
+    border-color: #e0e0e0;
+    color: #777777;
+}
+#email {
+    width: 100%;
+    height: 30px;
+    border: 1px;
+    border-style: solid;
+    border-color: #e0e0e0;
+    color: #777777;
+}
+#message {
+    width: 100%;
+    height: 100px;
+    border: 1px;
+    border-style: solid;
+    border-color: #e0e0e0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #777777;
+}
+#submit {
+    width: 100px;
+    height: 50px;
+    padding: 10px;
+    font-size: 20px;
+    border: 1px;
+    border-style: solid;
+    border-color: #e0e0e0;
+    background-color: #4aaaa5;
+    color: #ffffff;
+}
+#submit:hover {
+    width: 100px;
+    height: 50px;
+    padding: 10px;
+    font-size: 20px;
+    border: 1px;
+    border-style: solid;
+    border-color: #e0e0e0;
+    background-color: #ffffff;
+    color: #4aaaa5;
+}
+#footerHR {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #4aaaa5;
+    height: 10px;
+    border: 0px; 
+}
+@media screen and (max-width: 980px) {
+    main {
+        width: 90%;
+        margin: 30px 30px 30px 50px;
+    }
+    .headerContainer {
+        width: 100%;
+        margin: 0px 0px 0px 0px;
+        display: block;
+    }
+}
+@media screen and (max-width: 768px) {
+    main {
+        width: 90%;
+        margin: 30px 30px 30px 50px;
+    }
+    .headerContainer {
+        width: 100%;
+        margin: 0px 0px 0px 0px;
+        display: block;
+    }
+}
+@media screen and (max-width: 640px) {
+    header {
+        position: relative;
+        margin: 0 0 0 0;
+        width: 100%;
+        height: auto;
+        background-color: #ffffff;
+        overflow: hidden;
+        padding: 0;    
+    }
+    main {
+        width: 90%;
+        height: auto;
+        margin: 30px auto;
+        
+    }
+    p{
+        margin: 0px 0px 50px 0px;
+    }
+    footer {
+        width: 100%;
+        height: 100px;
+        background-color: #666666;
+        position: fixed;
+        bottom: 0%;
+        left: 0;
+        clear: both;
+    }
+    .footerContainer {
+        color: #cccccc;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    #footerHR {
+        position: relative;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #4aaaa5;
+        height: 10px;
+        border: 0px; 
+    }
+    #bioImage {
+        float: none;
+        max-width: 100%;
+        margin: 0 auto;
+        
+    
+    }
+    /* Classes */
+    .headerContainer {
+        margin: 0 0 0 0;
+        height: 150px;
+        width: 100%;
+        background-color: #ffffff;  
+        overflow: hidden;   
+    }
+    /* IDs */
+    #logo {
+        height: 50%;
+        width: 100%;
+        background-color: #4aaaa5;
+        color: #ffffff;
+        text-align: center;
+        padding: 15px;
+        float: none;
+        margin: 0 0 0 0;
+        display: block;
+    }
+    #navBar {
+        height:50%;
+        width: 100%;
+        margin: 100 0 0 0px;
+        float: none;
+        word-spacing: 20px;
+        font-size: 20px;
+        color: #e0e0e0;
+        background-color: #ffffff;
+        padding: 0px;
+        text-align: center;
+    }
+}

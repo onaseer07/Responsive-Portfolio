@@ -1,0 +1,122 @@
+/* Elements */
+* {
+    box-sizing: border-box;
+}
+body {
+    color: #777777;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 0 0 0;
+}
+header {
+    position: relative;
+    margin: 0 0 0 0;
+    width: 100%;
+    height: auto;
+    background-color: #ffffff;
+    overflow: hidden;    
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+a:link {
+    padding: 5px;
+    color: #777777;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 20px;
+}
+a:hover {
+    color: #44aaa5;
+    background: #ffffff;
+    font-style: normal;
+    font-size: 20px;
+    transition: .5s;
+}
+a:visited {
+    padding: 5px;
+    color: #777777;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 20px;
+}
+a:visited:hover{
+    color: #44aaa5;
+    background: #ffffff;
+    font-style: normal;
+    font-size: 20px;
+    transition: .5s;
+}
+/* Classes */
+.headerContainer {
+    margin: 0 auto;
+    height: 100px;
+    width: 960px;
+    background-color: #e0e0e05b;   
+}
+/* IDs */
+#logo {
+    height: 100%;
+    background-color: #4aaaa5;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    float: left;
+    margin:0;
+}
+#navBar {
+    height:auto;
+    width: auto;
+    margin: 0;
+    float: right;
+    word-spacing: 20px;
+    font-size: 20px;
+    color: #e0e0e0;
+    background-color: #ffffff;
+    padding: 38px;
+}
+@media screen and (max-width: 640px) {
+    header {
+        position: relative;
+        margin: 0 0 0 0;
+        width: 100%;
+        height: auto;
+        background-color: #ffffff;
+        overflow: hidden;    
+    }
+    /* Classes */
+    .headerContainer {
+        margin: 0;
+        height: 150px;
+        width: 100%;
+        background-color: #ffffff;  
+        overflow: hidden;   
+    }
+    /* IDs */
+    #logo {
+        height: 50%;
+        width: 100%;
+        background-color: #4aaaa5;
+        color: #ffffff;
+        text-align: center;
+        padding: 10px;
+        float: none;
+        margin:0;
+        display: block;
+    }
+    #navBar {
+        height:50%;
+        width: 100%;
+        margin: 100 0 0 0px;
+        float: none;
+        word-spacing: 20px;
+        font-size: 20px;
+        color: #e0e0e0;
+        background-color: #ffffff;
+        padding: 8px;
+        text-align: center;
+    }
+}
